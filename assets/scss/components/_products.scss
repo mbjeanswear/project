@@ -1,0 +1,44 @@
+/*=============== PRODUCTS ===============*/
+.products{
+    &__container{
+        padding-bottom: 5rem;
+    }
+    &__card{
+        width: 270px;
+    }
+    &__img{
+        margin-bottom: 1rem;
+    }
+    &__title{
+        font-size: var(--h3-font-size);
+        margin-bottom: .75rem;
+    }
+    &__price{
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+}
+
+/* Swiper class */
+.swiper-button{
+    &-prev::after,
+    &-next::after{
+        content: '';
+    }
+
+    &-prev,
+    &-next{
+        top: initial;
+        bottom: 0;
+        width: initial;
+        height: initial;
+        font-size: 1.5rem;
+        color: var(--title-color);
+    }
+    &-prev{
+        left: calc(50% - 2rem);
+    }
+    &-next{
+        right: calc(50% - 2rem);
+    }
+}

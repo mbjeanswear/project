@@ -1,0 +1,68 @@
+/*=============== HEADER & NAV ===============*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: var(--z-fixed);
+    transition: .4s;
+}
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__logo{
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+    }
+    @media screen and (max-width: 1023px){
+        &__menu{
+            position: fixed;
+            bottom: 1.5rem;
+            background-color: var(--body-color);
+            box-shadow: 0 4px 12px hsla(220, 18%, 40%, .15);
+            width: 90%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 1.25rem 2.8rem;
+            border-radius: .5rem;
+            transition: .4s; /*For animation dark mode*/
+        }
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__link{
+            color: var(--text-color-light);
+            font-weight: var(--font-medium);
+            display: grid;
+            justify-items: center;
+            row-gap: .25rem;
+
+            & i{
+                font-size: 1.25rem;
+            }
+
+            & span{
+                font-size: .688rem;
+            }
+        }
+    }
+}
+
+/* Change background header */
+.scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px hsla(220, 4%, 15%, .1);
+}
+
+/* Active link */
+.active-link{
+    color: var(--title-color);
+}

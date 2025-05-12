@@ -1,0 +1,18 @@
+/*=============== BUTTON ===============*/
+.button{
+    &__link{
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        
+        & i{
+            font-size: 1rem;
+            transition: .3s;
+        }
+        &:hover i{
+            transform: translateX(.25rem);
+        }
+    }
+}

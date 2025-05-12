@@ -1,0 +1,49 @@
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+    --bg-color: hsl(220, 18%, 13%);
+    --bg-color-light: hsl(220, 18%, 23%);
+    --title-color: hsl(220, 8%, 95%);
+    --text-color: hsl(220, 8%, 65%);
+    --body-color: hsl(220, 18%, 18%);
+    --container-color: hsl(220, 18%, 21%);
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme{
+    color: var(--title-color);
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+/*========== 
+    Color changes in some parts of 
+    the website, in dark theme 
+==========*/
+
+.dark-theme{
+    & .scroll-header{
+        box-shadow: 0 2px 8px hsla(220, 18%, 8%, .3);
+    }
+
+    & .nav__menu{
+        background-color: var(--container-color);
+    }
+
+    & .nav__menu,
+    & .scrollup{
+        box-shadow: 0 4px 8px hsla(220, 18%, 8%, .3);
+    }
+
+    &::-webkit-scrollbar{
+        background-color: hsl(220, 18%, 15%);
+    
+        &-thumb{
+            background-color: hsl(220, 18%, 25%);
+            
+            &:hover{
+                background-color: hsl(220, 18%, 35%);
+            }
+        }
+    }
+}

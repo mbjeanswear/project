@@ -1,0 +1,40 @@
+/*=============== HOME ===============*/
+.home{
+    background-color: var(--bg-color);
+    overflow: hidden;
+    transition: .4s; /*For animation dark mode*/
+
+    &__container{
+        padding: 4rem 0 1rem;
+        row-gap: 8.5rem;
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        font-weight: 400;
+    }
+    &__description{
+        color: var(--title-color);
+        margin: 1rem 0 2rem;
+    }
+    &__title,
+    &__description{
+        line-height: 140%;
+    }
+    &__images{
+        position: relative;
+        width: 310px;
+        justify-self: center;
+
+        & img:nth-child(1){
+            width: 224px;
+            position: absolute;
+            right: -1.5rem;
+            top: -9.5rem;
+        }
+        & img:nth-child(2){
+            width: 180px;
+            margin-left: .5rem;
+            position: relative;
+        }
+    }
+}

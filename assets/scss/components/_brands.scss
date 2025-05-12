@@ -1,0 +1,15 @@
+/*=============== BRANDS ===============*/
+.brand{
+    &__container{
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        column-gap: 1.25rem;
+    }
+    &__img{
+        width: 120px;
+
+        &:nth-child(even){
+            margin-top: 2rem;
+        }
+    }
+}

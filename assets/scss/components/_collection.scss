@@ -1,0 +1,40 @@
+/*=============== COLLECTION ===============*/
+.collection{
+    background-color: var(--bg-color-light);
+    overflow: hidden;
+    transition: .4s; /*For animation dark mode*/
+    
+    &__container{
+        position: relative;
+        height: 571px;
+        display: grid;
+        justify-items: center;
+    }
+    &__title{
+        font-size: var(--h1-font-size);
+        margin-bottom: .75rem;
+    }
+    &__explore{
+        display: grid;
+        column-gap: 2rem;
+        position: absolute;
+
+        &:nth-child(2){
+            grid-template-columns: 230px max-content;
+            bottom: 1rem;
+            margin-right: 5rem;
+        }
+        &:nth-child(1){
+            grid-template-columns: max-content 230px;
+            top: 0;
+            margin-left: 5rem;
+        }
+    }
+    &__data-men{
+        margin-top: 2.5rem;
+    }
+    &__data-women{
+        align-self: flex-end;
+        margin-bottom: 2.5rem;
+    }
+}
