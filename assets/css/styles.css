@@ -850,3 +850,25 @@ body.dark-theme {
     display: none; /* Oculta o botão no mobile */
   }
 }
+
+/* Esconde o item mobile por padrão */
+.nav-mobile {
+  display: none;
+}
+
+/* Mostra o item desktop por padrão */
+.nav-desktop {
+  display: inline-flex;
+}
+
+/* Quando a tela for menor que 768px (mobile), inverte os itens */
+@media (max-width: 768px) {
+  .nav-mobile {
+      display: inline-flex;
+  }
+
+  .nav-desktop {
+      display: none;
+  }
+}
+
