@@ -698,7 +698,7 @@ body.dark-theme {
 
   .active-link {
     color: var(--title-color);
-    text-decoration: line-through;
+    /* text-decoration: line-through;*/
   }
 
   .change-theme {
@@ -872,3 +872,39 @@ body.dark-theme {
   }
 }
 
+
+/* ABOUT US */
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.about__img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about__content {
+  max-width: 700px;
+}
+
+.about__description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
